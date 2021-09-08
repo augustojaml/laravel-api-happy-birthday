@@ -1,0 +1,256 @@
+_type: export
+__export_format: 4
+__export_date: 2021-09-08T04:11:43.808Z
+__export_source: insomnia.desktop.app:v2021.3.0
+resources:
+  - _id: req_19c17032070a42e494b38bf414bf49d8
+    parentId: fld_feb52750f24e4198a5a79069582d5733
+    modified: 1631063044854
+    created: 1631058574448
+    url: "{{ _.baseURL }}/v1/dashboard"
+    name: dashboard
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: Accept
+        value: application/json
+        description: ""
+        id: pair_20c3f2b7af50473c9fbd9ce3b50936a9
+      - name: ""
+        value: ""
+        description: ""
+        id: pair_8301e4cfa2b7422cb408a66e5f3d61d2
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1631058574648
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_feb52750f24e4198a5a79069582d5733
+    parentId: wrk_8397dd45d8ab42148bf550b0fc3465e9
+    modified: 1631062854720
+    created: 1631062854720
+    name: private
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1631062854720
+    _type: request_group
+  - _id: wrk_8397dd45d8ab42148bf550b0fc3465e9
+    parentId: null
+    modified: 1631049074085
+    created: 1631049022158
+    name: "[#VoucherBirthDay]"
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_cdc087e01eec4847aedb98cc6818ce07
+    parentId: fld_feb52750f24e4198a5a79069582d5733
+    modified: 1631063051809
+    created: 1631059045045
+    url: "{{ _.baseURL }}/v1/logout"
+    name: logout
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1631058574598
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_03b93df2a263406290e5bea8516da941
+    parentId: fld_feb52750f24e4198a5a79069582d5733
+    modified: 1631063076717
+    created: 1631052656798
+    url: "{{ _.baseURL }}/v1/vouchers"
+    name: vouchers
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Flavia Lima",
+        	"email":"flavia@gmail.com",
+        	"whatsapp":"61 995337634",
+        	"date_of_birth":"11/11/1979",
+        	"how_did_you_find_us":"facebook"
+        }
+    parameters: []
+    headers:
+      - name: Accept
+        value: application/json
+        description: ""
+        id: pair_6ea0c5eac09646fdae2bbf501a24f089
+      - name: Content-Type
+        value: application/json
+        id: pair_5e45a6054488413197b91797d27013ff
+    authentication:
+      type: bearer
+      token: "{{ _.token }}"
+    metaSortKey: -1631058574548
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c3158db627cd49a8bf8f7d9d9da32411
+    parentId: fld_fbff771789be4d84a61c7da9c3f115df
+    modified: 1631062928331
+    created: 1631054299300
+    url: "{{ _.baseURL }}/v1/login"
+    name: login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email":"matraca.suporte@gmail.com",
+        	"password":"root"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        description: ""
+        id: pair_1ede8cf0fe8c43b8b62d42d82760bc92
+      - name: Accept
+        value: application/json
+        description: ""
+        id: pair_a7089f879f8742e6b5dcbb24b54f4c81
+    authentication:
+      type: bearer
+      token: ""
+    metaSortKey: -1631049157596
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_fbff771789be4d84a61c7da9c3f115df
+    parentId: wrk_8397dd45d8ab42148bf550b0fc3465e9
+    modified: 1631062922247
+    created: 1631058559926
+    name: Public
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1631058559927
+    _type: request_group
+  - _id: req_43b58a27c41e4db184a5d98aac999856
+    parentId: fld_fbff771789be4d84a61c7da9c3f115df
+    modified: 1631062955229
+    created: 1631049157546
+    url: "{{ _.baseURL }}/v1/vouchers"
+    name: voucher
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Marilene Lima",
+        	"email":"marilene@gmail.com",
+        	"whatsapp":"61 995337634",
+        	"date_of_birth":"11/11/1979",
+        	"how_did_you_find_us":"facebook"
+        }
+    parameters: []
+    headers:
+      - name: Accept
+        value: application/json
+        description: ""
+        id: pair_6ea0c5eac09646fdae2bbf501a24f089
+      - name: Content-Type
+        value: application/json
+        id: pair_5e45a6054488413197b91797d27013ff
+    authentication: {}
+    metaSortKey: -1631049157546
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_3eac59f8e82b6c574e0ed9d4382d206706694e85
+    parentId: wrk_8397dd45d8ab42148bf550b0fc3465e9
+    modified: 1631063029802
+    created: 1631049022254
+    name: Base Environment
+    data:
+      baseURL: http://localhost/api_vouchers/api
+      token: 10|mYNXIgW98V4NrGgV495mq4NywK9CAo7DSs14cna9
+    dataPropertyOrder:
+      "&":
+        - baseURL
+        - token
+    color: null
+    isPrivate: false
+    metaSortKey: 1631049022254
+    _type: environment
+  - _id: jar_3eac59f8e82b6c574e0ed9d4382d206706694e85
+    parentId: wrk_8397dd45d8ab42148bf550b0fc3465e9
+    modified: 1631050218266
+    created: 1631049022255
+    name: Default Jar
+    cookies:
+      - key: XSRF-TOKEN
+        value: eyJpdiI6InorMGNUbVhPVndTK3ZjUklOOTBEbkE9PSIsInZhbHVlIjoiR0dhb2F2RlNHa3ppZG5SeHhkZ2g0TXBCb0tpSWxBVmJVUFBkbDQvU3V4bklQZWY0cmJJMmppeXMzcTNzZlJJdnlENXQ4c1pFb2g5VUZnZjdOSExPVGxOaENNb0oyVEhVVVRheXh0aUJRTld5N084STZwdWMyckZpRzF2U0ZVRGQiLCJtYWMiOiIyYjk4ZTZjMjQwMzkxNDIwMzI4YWQwMzUxNDQ2NTE1ZjRlOGNhYjZkMjkzNGFkNzdiNzFlNWE4M2RiODk3OWE5IiwidGFnIjoiIn0%3D
+        expires: 2021-09-07T23:30:18.000Z
+        maxAge: 7200
+        domain: localhost
+        path: /
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        creation: 2021-09-07T21:30:18.258Z
+        lastAccessed: 2021-09-07T21:30:18.258Z
+        id: "8402511162530673"
+      - key: laravel_session
+        value: eyJpdiI6Ik5YL1k5Um1wMVBnbWQ5bnpYbml5R0E9PSIsInZhbHVlIjoiRnlxSS96d1kvYnBNMjV3NGNIVVFvODdJSjlHZXlNL1RScUcwYldEUlNTNXI4Mzdya1BiNHA4bFB2Z1hpV3Mvb1NLSjczcXJUQURsc01iSGJia3Jabk9sMXZPWmpXNUlrRTZjRHVmYm1ldFVoWHNIaFRacUtQMk8rYlNUUWFwYk0iLCJtYWMiOiJhNmE5M2VjMmI5M2E2YzAzMmQyZTE1ZThjYzk0YjczZTBlOGZhNzk1MjAwY2MwMzA0OGI3YWFiYjRmYWQ3YjIxIiwidGFnIjoiIn0%3D
+        expires: 2021-09-07T23:30:18.000Z
+        maxAge: 7200
+        domain: localhost
+        path: /
+        httpOnly: true
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        creation: 2021-09-07T21:30:18.258Z
+        lastAccessed: 2021-09-07T21:30:18.258Z
+        id: "23493581673450548"
+    _type: cookie_jar
+  - _id: spc_016ffb1433694cc8a9d275e91755ad94
+    parentId: wrk_8397dd45d8ab42148bf550b0fc3465e9
+    modified: 1631049022161
+    created: 1631049022161
+    fileName: VoucherDayOfBirth
+    contents: ""
+    contentType: yaml
+    _type: api_spec
