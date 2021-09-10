@@ -32,4 +32,9 @@ class SessionController extends Controller
         $request->user()->currentAccessToken()->delete();
         return response()->json(['message' => 'Logged out']);
     }
+
+    public function unauthenticated()
+    {
+        return response()->json('token is missing', 401);
+    }
 }

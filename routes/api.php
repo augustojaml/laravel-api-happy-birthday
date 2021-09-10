@@ -28,6 +28,8 @@ Route::group([
     //SESSIONS
     Route::post('login', [SessionController::class, 'login']);
 
+    Route::get('/unauthenticated', [SessionController::class, 'unauthenticated'])->name('login');
+
     //PROTECTED
     Route::group(['middleware' => ['auth:sanctum']], function () {
         Route::get('dashboard', [DashboardController::class, 'dashboard']);
