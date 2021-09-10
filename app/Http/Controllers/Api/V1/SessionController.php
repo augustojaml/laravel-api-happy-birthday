@@ -35,6 +35,6 @@ class SessionController extends Controller
 
     public function unauthenticated()
     {
-        return response()->json('token is missing', 401);
+        return response()->json(['message' => 'token is missing'], 401);
     }
 }
