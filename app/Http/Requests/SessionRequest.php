@@ -4,7 +4,6 @@ namespace App\Http\Requests;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Http\Client\Response;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
 class SessionRequest extends FormRequest
@@ -26,7 +25,7 @@ class SessionRequest extends FormRequest
     {
         return [
             'email.required'                    => 'O :attribute é obrigatório',
-            'email.mail'                        => 'O :attribute não é um email válido',
+            'email.email'                        => 'O :attribute não é válido',
             'password.required'                 => 'A :attribute é obrigatória',
             'password.min'                      => 'A :attribute deve ser preenchido com no mínino 4 caracteres',
             'password.max'                      => 'A :attribute deve ser preenchido com no mínino 8 caracteres',

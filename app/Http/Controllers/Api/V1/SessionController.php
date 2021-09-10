@@ -17,7 +17,14 @@ class SessionController extends Controller
         ];
 
         if (!Auth::attempt($credentials)) {
-            return response()->json(['message' => 'Login e/ou password inválidos'], 401);
+
+
+            $errors = 'E-mail e/ou password inválidos';
+
+            return response()->json(['errors' => (object) [
+                'email' => [$errors],
+                'password' => [$errors],
+            ]], 401);
         }
 
         $user = $request->user();
