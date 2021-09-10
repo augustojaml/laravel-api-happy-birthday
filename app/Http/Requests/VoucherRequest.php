@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class VoucherRequest extends FormRequest
 {
@@ -49,5 +51,14 @@ class VoucherRequest extends FormRequest
             'date_of_birth'         => 'Dt. nasc.',
             'how_did_you_find_us'   => 'Como nos conheceu?',
         ];
+    }
+
+    protected function failedValidation(Validator $validator): void
+    {
+        $errors = $validator->errors();
+
+        throw new HttpResponseException(response()->json([
+            'errors' => $errors
+        ], 401));
     }
 }
