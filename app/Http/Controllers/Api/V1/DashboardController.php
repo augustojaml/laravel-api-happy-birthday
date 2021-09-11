@@ -24,16 +24,16 @@ class DashboardController extends Controller
         $site = $vouchers->where('how_did_you_find_us', 'site')->count();
         $outros = $vouchers->where('how_did_you_find_us', 'outros')->count();
 
-        $dataVouchers = (object) [
-            'vouchers'  => $vouchers->take(8),
+        $dataVouchers = [
+            'vouchers'  => array_values($vouchers->toArray()),
             'total'     => str_pad($vouchers->count(), 2, '0', STR_PAD_LEFT),
             'facebook'  => str_pad($facebook, 2, '0', STR_PAD_LEFT),
             'google'    => str_pad($google, 2, '0', STR_PAD_LEFT),
             'instagram' => str_pad($instagram, 2, '0', STR_PAD_LEFT),
             'site'      => str_pad($site, 2, '0', STR_PAD_LEFT),
-            'outros'    => str_pad($outros, 2, '0', STR_PAD_LEFT),
+            'others'    => str_pad($outros, 2, '0', STR_PAD_LEFT),
         ];
 
-        return response()->json(['dataVouchers', $dataVouchers]);
+        return response()->json($dataVouchers);
     }
 }

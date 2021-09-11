@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'expiration' => 10,
+    'expiration' => env('TOKEN_EXPIRATION') ? env('TOKEN_EXPIRATION') : null,
 
     /*
     |--------------------------------------------------------------------------
