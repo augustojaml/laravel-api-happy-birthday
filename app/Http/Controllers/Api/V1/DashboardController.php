@@ -25,7 +25,7 @@ class DashboardController extends Controller
         $outros = $vouchers->where('how_did_you_find_us', 'outros')->count();
 
         $dataVouchers = [
-            'vouchers'  => array_values($vouchers->toArray()),
+            'vouchers'  => array_values($vouchers->take(5)->toArray()),
             'total'     => str_pad($vouchers->count(), 2, '0', STR_PAD_LEFT),
             'facebook'  => str_pad($facebook, 2, '0', STR_PAD_LEFT),
             'google'    => str_pad($google, 2, '0', STR_PAD_LEFT),

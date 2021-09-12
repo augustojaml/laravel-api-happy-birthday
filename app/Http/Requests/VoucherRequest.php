@@ -18,7 +18,7 @@ class VoucherRequest extends FormRequest
         return [
             'name'                => 'required|min:10|max:150',
             'email'               => 'required|email',
-            'whatsapp'            => 'required|min:12|max:12',
+            'whatsapp'            => 'required|min:15|max:15',
             'date_of_birth'       => 'required|date_format:d/m/Y',
             'how_did_you_find_us' => 'required|in:facebook,google,instagram,site,outros',
         ];
