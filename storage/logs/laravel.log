@@ -1571,3 +1571,521 @@ Did you mean one of these?
 #48 /home/devops/Projects/apache/laravel-api-vouchers/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
 #49 {main}
 "} 
+[2021-09-12 15:07:01] local.ERROR: Undefined variable: voucher (View: /home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php) {"view":{"view":"/home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php","data":{"vouchers":"<pre class=sf-dump id=sf-dump-1072493782 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Models\\Vouchers</span> {<a class=sf-dump-ref>#1189</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:7</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"4 characters\">name</span>\"
+    <span class=sf-dump-index>1</span> => \"<span class=sf-dump-str title=\"5 characters\">email</span>\"
+    <span class=sf-dump-index>2</span> => \"<span class=sf-dump-str title=\"8 characters\">whatsapp</span>\"
+    <span class=sf-dump-index>3</span> => \"<span class=sf-dump-str title=\"5 characters\">token</span>\"
+    <span class=sf-dump-index>4</span> => \"<span class=sf-dump-str title=\"13 characters\">date_of_birth</span>\"
+    <span class=sf-dump-index>5</span> => \"<span class=sf-dump-str title=\"19 characters\">how_did_you_find_us</span>\"
+    <span class=sf-dump-index>6</span> => \"<span class=sf-dump-str title=\"7 characters\">voucher</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"8 characters\">vouchers</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+  +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+  +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+  +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:9</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>name</span>\" => \"<span class=sf-dump-str title=\"16 characters\">Augusto Monteiro</span>\"
+    \"<span class=sf-dump-key>email</span>\" => \"<span class=sf-dump-str title=\"25 characters\">jamonteirolilma@gmail.com</span>\"
+    \"<span class=sf-dump-key>whatsapp</span>\" => \"<span class=sf-dump-str title=\"15 characters\">(61) 99533-7634</span>\"
+    \"<span class=sf-dump-key>token</span>\" => \"<span class=sf-dump-str title=\"15 characters\">TKD0GC6UHLX6HX7</span>\"
+    \"<span class=sf-dump-key>date_of_birth</span>\" => \"<span class=sf-dump-str title=\"10 characters\">1977-06-17</span>\"
+    \"<span class=sf-dump-key>how_did_you_find_us</span>\" => \"<span class=sf-dump-str title=\"8 characters\">facebook</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2021-09-12 15:07:01</span>\"
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2021-09-12 15:07:01</span>\"
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>13</span>
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:9</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>name</span>\" => \"<span class=sf-dump-str title=\"16 characters\">Augusto Monteiro</span>\"
+    \"<span class=sf-dump-key>email</span>\" => \"<span class=sf-dump-str title=\"25 characters\">jamonteirolilma@gmail.com</span>\"
+    \"<span class=sf-dump-key>whatsapp</span>\" => \"<span class=sf-dump-str title=\"15 characters\">(61) 99533-7634</span>\"
+    \"<span class=sf-dump-key>token</span>\" => \"<span class=sf-dump-str title=\"15 characters\">TKD0GC6UHLX6HX7</span>\"
+    \"<span class=sf-dump-key>date_of_birth</span>\" => \"<span class=sf-dump-str title=\"10 characters\">1977-06-17</span>\"
+    \"<span class=sf-dump-key>how_did_you_find_us</span>\" => \"<span class=sf-dump-str title=\"8 characters\">facebook</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2021-09-12 15:07:01</span>\"
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2021-09-12 15:07:01</span>\"
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>13</span>
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dates</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+  +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>*</span>\"
+  </samp>]
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1072493782\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","connection":"<pre class=sf-dump id=sf-dump-1140691377 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1140691377\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","queue":"<pre class=sf-dump id=sf-dump-512463764 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-512463764\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chainConnection":"<pre class=sf-dump id=sf-dump-2101864111 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-2101864111\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chainQueue":"<pre class=sf-dump id=sf-dump-346953879 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-346953879\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chainCatchCallbacks":"<pre class=sf-dump id=sf-dump-1986426038 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1986426038\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","delay":"<pre class=sf-dump id=sf-dump-1423528921 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1423528921\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","afterCommit":"<pre class=sf-dump id=sf-dump-941226567 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-941226567\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","middleware":"<pre class=sf-dump id=sf-dump-1680895546 data-indent-pad=\"  \">[]
+</pre><script>Sfdump(\"sf-dump-1680895546\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chained":"<pre class=sf-dump id=sf-dump-1971934303 data-indent-pad=\"  \">[]
+</pre><script>Sfdump(\"sf-dump-1971934303\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","message":"<pre class=sf-dump id=sf-dump-310405215 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Mail\\Message</span> {<a class=sf-dump-ref>#1281</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">swift</span>: <span class=sf-dump-note>Swift_Message</span> {<a class=sf-dump-ref>#1279</a><samp data-depth=2 class=sf-dump-compact>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Message`\">headerSigners</span>: []
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Message`\">bodySigners</span>: []
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Message`\">savedMessage</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">userFormat</span>: <span class=sf-dump-const>null</span>
+    #<span class=sf-dump-protected title=\"Protected property\">userCharset</span>: \"<span class=sf-dump-str title=\"5 characters\">utf-8</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">userDelSp</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_MimePart`\">nestingLevel</span>: <span class=sf-dump-num>4096</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">headers</span>: <span class=sf-dump-note>Swift_Mime_SimpleHeaderSet</span> {<a class=sf-dump-ref>#1277</a><samp data-depth=3 class=sf-dump-compact>
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">factory</span>: <span class=sf-dump-note>Swift_Mime_SimpleHeaderFactory</span> {<a class=sf-dump-ref>#1276</a> &hellip;5}
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">headers</span>: <span class=sf-dump-note>array:8</span> [ &hellip;8]
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">order</span>: <span class=sf-dump-note>array:16</span> [ &hellip;16]
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">required</span>: <span class=sf-dump-note>array:3</span> [ &hellip;3]
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">charset</span>: \"<span class=sf-dump-str title=\"5 characters\">utf-8</span>\"
+    </samp>}
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">body</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">encoder</span>: <span class=sf-dump-note>Swift_Mime_ContentEncoder_QpContentEncoderProxy</span> {<a class=sf-dump-ref>#1267</a><samp data-depth=3 class=sf-dump-compact>
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_ContentEncoder_QpContentEncoderProxy`\">safeEncoder</span>: <span class=sf-dump-note>Swift_Mime_ContentEncoder_QpContentEncoder</span> {<a class=sf-dump-ref>#1266</a> &hellip;4}
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_ContentEncoder_QpContentEncoderProxy`\">nativeEncoder</span>: <span class=sf-dump-note>Swift_Mime_ContentEncoder_NativeQpContentEncoder</span> {<a class=sf-dump-ref>#1263</a> &hellip;1}
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_ContentEncoder_QpContentEncoderProxy`\">charset</span>: \"<span class=sf-dump-str title=\"5 characters\">utf-8</span>\"
+    </samp>}
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">idGenerator</span>: <span class=sf-dump-note>Swift_Mime_IdGenerator</span> {<a class=sf-dump-ref>#1260</a><samp data-depth=3 class=sf-dump-compact>
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_IdGenerator`\">idRight</span>: \"<span class=sf-dump-str title=\"9 characters\">localhost</span>\"
+    </samp>}
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">boundary</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">compositeRanges</span>: <span class=sf-dump-note>array:3</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>multipart/mixed</span>\" => <span class=sf-dump-note>array:2</span> [ &hellip;2]
+      \"<span class=sf-dump-key>multipart/alternative</span>\" => <span class=sf-dump-note>array:2</span> [ &hellip;2]
+      \"<span class=sf-dump-key>multipart/related</span>\" => <span class=sf-dump-note>array:2</span> [ &hellip;2]
+    </samp>]
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">compoundLevelFilters</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-key>69632</span> => <span class=sf-dump-note>array:1</span> [ &hellip;1]
+    </samp>]
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">cache</span>: <span class=sf-dump-note>Swift_KeyCache_DiskKeyCache</span> {<a class=sf-dump-ref>#1262</a><samp data-depth=3 class=sf-dump-compact>
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_KeyCache_DiskKeyCache`\">stream</span>: <span class=sf-dump-note>Swift_KeyCache_SimpleKeyCacheInputStream</span> {<a class=sf-dump-ref>#1261</a> &hellip;4}
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_KeyCache_DiskKeyCache`\">path</span>: \"<span class=sf-dump-str title=\"4 characters\">/tmp</span>\"
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_KeyCache_DiskKeyCache`\">keys</span>: []
+    </samp>}
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">immediateChildren</span>: []
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">children</span>: []
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">maxLineLength</span>: <span class=sf-dump-num>78</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">alternativePartOrder</span>: <span class=sf-dump-note>array:3</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>text/plain</span>\" => <span class=sf-dump-num>1</span>
+      \"<span class=sf-dump-key>text/html</span>\" => <span class=sf-dump-num>2</span>
+      \"<span class=sf-dump-key>multipart/related</span>\" => <span class=sf-dump-num>3</span>
+    </samp>]
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">id</span>: \"<span class=sf-dump-str title=\"42 characters\">17803f82566ca168ed8e61e3903cce09@localhost</span>\"
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">cacheKey</span>: \"<span class=sf-dump-str title=\"32 characters\">a9f4a645899b361f118c66ba93d1a27c</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">userContentType</span>: \"<span class=sf-dump-str title=\"10 characters\">text/plain</span>\"
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">nestingLevel</span>: <span class=sf-dump-num>4096</span>
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">embeddedFiles</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-310405215\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: voucher (View: /home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php) at /home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php:6)
+[stacktrace]
+#0 /home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php(6): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(107): require('/home/devops/Pr...')
+#2 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#3 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire()
+#4 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath()
+#5 /home/devops/Projects/apache/laravel-api-vouchers/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get()
+#6 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get()
+#7 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#8 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#9 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(382): Illuminate\\View\\View->render()
+#10 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(355): Illuminate\\Mail\\Mailer->renderView()
+#11 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(273): Illuminate\\Mail\\Mailer->addContent()
+#12 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(187): Illuminate\\Mail\\Mailer->send()
+#13 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#14 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(188): Illuminate\\Mail\\Mailable->withLocale()
+#15 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(304): Illuminate\\Mail\\Mailable->send()
+#16 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(258): Illuminate\\Mail\\Mailer->sendMailable()
+#17 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send()
+#18 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call()
+#19 /home/devops/Projects/apache/laravel-api-vouchers/app/Http/Controllers/Api/V1/VoucherController.php(43): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#20 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\V1\\VoucherController->store()
+#21 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
+#22 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#23 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
+#24 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#25 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#26 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#28 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#30 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#31 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#32 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then()
+#34 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack()
+#35 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute()
+#36 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute()
+#37 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#38 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#39 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#41 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#42 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#44 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#45 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#47 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#49 /home/devops/Projects/apache/laravel-api-vouchers/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#51 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#53 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#55 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#56 /home/devops/Projects/apache/laravel-api-vouchers/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#57 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable: voucher at /home/devops/Projects/apache/laravel-api-vouchers/storage/framework/views/3afcb12dbc65f6a1b521f2fb8175b236fc2e8dad.php:6)
+[stacktrace]
+#0 /home/devops/Projects/apache/laravel-api-vouchers/storage/framework/views/3afcb12dbc65f6a1b521f2fb8175b236fc2e8dad.php(6): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(107): require('/home/devops/Pr...')
+#2 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#3 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire()
+#4 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath()
+#5 /home/devops/Projects/apache/laravel-api-vouchers/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get()
+#6 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get()
+#7 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#8 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#9 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(382): Illuminate\\View\\View->render()
+#10 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(355): Illuminate\\Mail\\Mailer->renderView()
+#11 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(273): Illuminate\\Mail\\Mailer->addContent()
+#12 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(187): Illuminate\\Mail\\Mailer->send()
+#13 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#14 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(188): Illuminate\\Mail\\Mailable->withLocale()
+#15 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(304): Illuminate\\Mail\\Mailable->send()
+#16 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(258): Illuminate\\Mail\\Mailer->sendMailable()
+#17 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send()
+#18 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call()
+#19 /home/devops/Projects/apache/laravel-api-vouchers/app/Http/Controllers/Api/V1/VoucherController.php(43): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#20 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\V1\\VoucherController->store()
+#21 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
+#22 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#23 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
+#24 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#25 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#26 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#28 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#30 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#31 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#32 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then()
+#34 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack()
+#35 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute()
+#36 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute()
+#37 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#38 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#39 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#41 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#42 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#44 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#45 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#47 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#49 /home/devops/Projects/apache/laravel-api-vouchers/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#51 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#53 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#55 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#56 /home/devops/Projects/apache/laravel-api-vouchers/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#57 {main}
+"} 
+[2021-09-12 15:07:32] local.ERROR: Undefined variable: voucherUser (View: /home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php) {"view":{"view":"/home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php","data":{"vouchers":"<pre class=sf-dump id=sf-dump-1611634725 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Models\\Vouchers</span> {<a class=sf-dump-ref>#1032</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:7</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"4 characters\">name</span>\"
+    <span class=sf-dump-index>1</span> => \"<span class=sf-dump-str title=\"5 characters\">email</span>\"
+    <span class=sf-dump-index>2</span> => \"<span class=sf-dump-str title=\"8 characters\">whatsapp</span>\"
+    <span class=sf-dump-index>3</span> => \"<span class=sf-dump-str title=\"5 characters\">token</span>\"
+    <span class=sf-dump-index>4</span> => \"<span class=sf-dump-str title=\"13 characters\">date_of_birth</span>\"
+    <span class=sf-dump-index>5</span> => \"<span class=sf-dump-str title=\"19 characters\">how_did_you_find_us</span>\"
+    <span class=sf-dump-index>6</span> => \"<span class=sf-dump-str title=\"7 characters\">voucher</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"8 characters\">vouchers</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+  +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+  +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+  +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:10</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>13</span>
+    \"<span class=sf-dump-key>name</span>\" => \"<span class=sf-dump-str title=\"16 characters\">Augusto Monteiro</span>\"
+    \"<span class=sf-dump-key>email</span>\" => \"<span class=sf-dump-str title=\"25 characters\">jamonteirolilma@gmail.com</span>\"
+    \"<span class=sf-dump-key>whatsapp</span>\" => \"<span class=sf-dump-str title=\"15 characters\">(61) 99533-7634</span>\"
+    \"<span class=sf-dump-key>token</span>\" => \"<span class=sf-dump-str title=\"15 characters\">HIOM5UCZUBMSVIM</span>\"
+    \"<span class=sf-dump-key>date_of_birth</span>\" => \"<span class=sf-dump-str title=\"19 characters\">1977-06-17 00:00:00</span>\"
+    \"<span class=sf-dump-key>how_did_you_find_us</span>\" => \"<span class=sf-dump-str title=\"8 characters\">facebook</span>\"
+    \"<span class=sf-dump-key>voucher</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2021-09-12 15:07:01</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2021-09-12 15:07:32</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:10</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>13</span>
+    \"<span class=sf-dump-key>name</span>\" => \"<span class=sf-dump-str title=\"16 characters\">Augusto Monteiro</span>\"
+    \"<span class=sf-dump-key>email</span>\" => \"<span class=sf-dump-str title=\"25 characters\">jamonteirolilma@gmail.com</span>\"
+    \"<span class=sf-dump-key>whatsapp</span>\" => \"<span class=sf-dump-str title=\"15 characters\">(61) 99533-7634</span>\"
+    \"<span class=sf-dump-key>token</span>\" => \"<span class=sf-dump-str title=\"15 characters\">HIOM5UCZUBMSVIM</span>\"
+    \"<span class=sf-dump-key>date_of_birth</span>\" => \"<span class=sf-dump-str title=\"19 characters\">1977-06-17 00:00:00</span>\"
+    \"<span class=sf-dump-key>how_did_you_find_us</span>\" => \"<span class=sf-dump-str title=\"8 characters\">facebook</span>\"
+    \"<span class=sf-dump-key>voucher</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2021-09-12 15:07:01</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2021-09-12 15:07:32</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: <span class=sf-dump-note>array:3</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>token</span>\" => \"<span class=sf-dump-str title=\"15 characters\">HIOM5UCZUBMSVIM</span>\"
+    \"<span class=sf-dump-key>voucher</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2021-09-12 15:07:32</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dates</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+  +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>*</span>\"
+  </samp>]
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1611634725\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","connection":"<pre class=sf-dump id=sf-dump-1607575370 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1607575370\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","queue":"<pre class=sf-dump id=sf-dump-381760464 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-381760464\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chainConnection":"<pre class=sf-dump id=sf-dump-816547923 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-816547923\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chainQueue":"<pre class=sf-dump id=sf-dump-1849180516 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1849180516\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chainCatchCallbacks":"<pre class=sf-dump id=sf-dump-1331120673 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1331120673\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","delay":"<pre class=sf-dump id=sf-dump-1533895670 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1533895670\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","afterCommit":"<pre class=sf-dump id=sf-dump-1682777000 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1682777000\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","middleware":"<pre class=sf-dump id=sf-dump-1964179553 data-indent-pad=\"  \">[]
+</pre><script>Sfdump(\"sf-dump-1964179553\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chained":"<pre class=sf-dump id=sf-dump-499334364 data-indent-pad=\"  \">[]
+</pre><script>Sfdump(\"sf-dump-499334364\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","message":"<pre class=sf-dump id=sf-dump-412226223 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Mail\\Message</span> {<a class=sf-dump-ref>#1281</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">swift</span>: <span class=sf-dump-note>Swift_Message</span> {<a class=sf-dump-ref>#1279</a><samp data-depth=2 class=sf-dump-compact>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Message`\">headerSigners</span>: []
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Message`\">bodySigners</span>: []
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Message`\">savedMessage</span>: []
+    #<span class=sf-dump-protected title=\"Protected property\">userFormat</span>: <span class=sf-dump-const>null</span>
+    #<span class=sf-dump-protected title=\"Protected property\">userCharset</span>: \"<span class=sf-dump-str title=\"5 characters\">utf-8</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">userDelSp</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_MimePart`\">nestingLevel</span>: <span class=sf-dump-num>4096</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">headers</span>: <span class=sf-dump-note>Swift_Mime_SimpleHeaderSet</span> {<a class=sf-dump-ref>#1277</a><samp data-depth=3 class=sf-dump-compact>
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">factory</span>: <span class=sf-dump-note>Swift_Mime_SimpleHeaderFactory</span> {<a class=sf-dump-ref>#1276</a> &hellip;5}
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">headers</span>: <span class=sf-dump-note>array:8</span> [ &hellip;8]
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">order</span>: <span class=sf-dump-note>array:16</span> [ &hellip;16]
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">required</span>: <span class=sf-dump-note>array:3</span> [ &hellip;3]
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleHeaderSet`\">charset</span>: \"<span class=sf-dump-str title=\"5 characters\">utf-8</span>\"
+    </samp>}
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">body</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">encoder</span>: <span class=sf-dump-note>Swift_Mime_ContentEncoder_QpContentEncoderProxy</span> {<a class=sf-dump-ref>#1267</a><samp data-depth=3 class=sf-dump-compact>
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_ContentEncoder_QpContentEncoderProxy`\">safeEncoder</span>: <span class=sf-dump-note>Swift_Mime_ContentEncoder_QpContentEncoder</span> {<a class=sf-dump-ref>#1266</a> &hellip;4}
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_ContentEncoder_QpContentEncoderProxy`\">nativeEncoder</span>: <span class=sf-dump-note>Swift_Mime_ContentEncoder_NativeQpContentEncoder</span> {<a class=sf-dump-ref>#1263</a> &hellip;1}
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_ContentEncoder_QpContentEncoderProxy`\">charset</span>: \"<span class=sf-dump-str title=\"5 characters\">utf-8</span>\"
+    </samp>}
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">idGenerator</span>: <span class=sf-dump-note>Swift_Mime_IdGenerator</span> {<a class=sf-dump-ref>#1260</a><samp data-depth=3 class=sf-dump-compact>
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_IdGenerator`\">idRight</span>: \"<span class=sf-dump-str title=\"9 characters\">localhost</span>\"
+    </samp>}
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">boundary</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">compositeRanges</span>: <span class=sf-dump-note>array:3</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>multipart/mixed</span>\" => <span class=sf-dump-note>array:2</span> [ &hellip;2]
+      \"<span class=sf-dump-key>multipart/alternative</span>\" => <span class=sf-dump-note>array:2</span> [ &hellip;2]
+      \"<span class=sf-dump-key>multipart/related</span>\" => <span class=sf-dump-note>array:2</span> [ &hellip;2]
+    </samp>]
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">compoundLevelFilters</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-key>69632</span> => <span class=sf-dump-note>array:1</span> [ &hellip;1]
+    </samp>]
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">cache</span>: <span class=sf-dump-note>Swift_KeyCache_DiskKeyCache</span> {<a class=sf-dump-ref>#1262</a><samp data-depth=3 class=sf-dump-compact>
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_KeyCache_DiskKeyCache`\">stream</span>: <span class=sf-dump-note>Swift_KeyCache_SimpleKeyCacheInputStream</span> {<a class=sf-dump-ref>#1261</a> &hellip;4}
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_KeyCache_DiskKeyCache`\">path</span>: \"<span class=sf-dump-str title=\"4 characters\">/tmp</span>\"
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_KeyCache_DiskKeyCache`\">keys</span>: []
+    </samp>}
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">immediateChildren</span>: []
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">children</span>: []
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">maxLineLength</span>: <span class=sf-dump-num>78</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">alternativePartOrder</span>: <span class=sf-dump-note>array:3</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>text/plain</span>\" => <span class=sf-dump-num>1</span>
+      \"<span class=sf-dump-key>text/html</span>\" => <span class=sf-dump-num>2</span>
+      \"<span class=sf-dump-key>multipart/related</span>\" => <span class=sf-dump-num>3</span>
+    </samp>]
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">id</span>: \"<span class=sf-dump-str title=\"42 characters\">545bd714b020a4cef320d8041ac453cf@localhost</span>\"
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">cacheKey</span>: \"<span class=sf-dump-str title=\"32 characters\">4e7e240ce9e7cd0b29fb2089fb21c23e</span>\"
+    #<span class=sf-dump-protected title=\"Protected property\">userContentType</span>: \"<span class=sf-dump-str title=\"10 characters\">text/plain</span>\"
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Swift_Mime_SimpleMimeEntity`\">nestingLevel</span>: <span class=sf-dump-num>4096</span>
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">embeddedFiles</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-412226223\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: voucherUser (View: /home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php) at /home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php:6)
+[stacktrace]
+#0 /home/devops/Projects/apache/laravel-api-vouchers/resources/views/mail/voucherMail.blade.php(6): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(107): require('/home/devops/Pr...')
+#2 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#3 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire()
+#4 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath()
+#5 /home/devops/Projects/apache/laravel-api-vouchers/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get()
+#6 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get()
+#7 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#8 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#9 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(382): Illuminate\\View\\View->render()
+#10 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(355): Illuminate\\Mail\\Mailer->renderView()
+#11 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(273): Illuminate\\Mail\\Mailer->addContent()
+#12 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(187): Illuminate\\Mail\\Mailer->send()
+#13 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#14 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(188): Illuminate\\Mail\\Mailable->withLocale()
+#15 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(304): Illuminate\\Mail\\Mailable->send()
+#16 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(258): Illuminate\\Mail\\Mailer->sendMailable()
+#17 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send()
+#18 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call()
+#19 /home/devops/Projects/apache/laravel-api-vouchers/app/Http/Controllers/Api/V1/VoucherController.php(43): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#20 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\V1\\VoucherController->store()
+#21 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
+#22 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#23 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
+#24 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#25 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#26 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#28 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#30 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#31 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#32 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then()
+#34 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack()
+#35 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute()
+#36 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute()
+#37 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#38 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#39 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#41 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#42 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#44 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#45 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#47 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#49 /home/devops/Projects/apache/laravel-api-vouchers/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#51 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#53 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#55 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#56 /home/devops/Projects/apache/laravel-api-vouchers/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#57 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable: voucherUser at /home/devops/Projects/apache/laravel-api-vouchers/storage/framework/views/3afcb12dbc65f6a1b521f2fb8175b236fc2e8dad.php:6)
+[stacktrace]
+#0 /home/devops/Projects/apache/laravel-api-vouchers/storage/framework/views/3afcb12dbc65f6a1b521f2fb8175b236fc2e8dad.php(6): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(107): require('/home/devops/Pr...')
+#2 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#3 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire()
+#4 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath()
+#5 /home/devops/Projects/apache/laravel-api-vouchers/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get()
+#6 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get()
+#7 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#8 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#9 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(382): Illuminate\\View\\View->render()
+#10 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(355): Illuminate\\Mail\\Mailer->renderView()
+#11 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(273): Illuminate\\Mail\\Mailer->addContent()
+#12 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(187): Illuminate\\Mail\\Mailer->send()
+#13 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#14 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(188): Illuminate\\Mail\\Mailable->withLocale()
+#15 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(304): Illuminate\\Mail\\Mailable->send()
+#16 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(258): Illuminate\\Mail\\Mailer->sendMailable()
+#17 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php(550): Illuminate\\Mail\\Mailer->send()
+#18 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Mail\\MailManager->__call()
+#19 /home/devops/Projects/apache/laravel-api-vouchers/app/Http/Controllers/Api/V1/VoucherController.php(43): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#20 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Api\\V1\\VoucherController->store()
+#21 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction()
+#22 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#23 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Route.php(204): Illuminate\\Routing\\Route->runController()
+#24 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->run()
+#25 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#26 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#28 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#30 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#31 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#32 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then()
+#34 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack()
+#35 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute()
+#36 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute()
+#37 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#38 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#39 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#41 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#42 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#44 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#45 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#47 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#49 /home/devops/Projects/apache/laravel-api-vouchers/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#51 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#53 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#55 /home/devops/Projects/apache/laravel-api-vouchers/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#56 /home/devops/Projects/apache/laravel-api-vouchers/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#57 {main}
+"} 

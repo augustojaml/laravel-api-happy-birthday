@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Vouchers;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -11,23 +12,18 @@ class VoucherMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    /**
-     * Create a new message instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $voucherUser;
+
+    public function __construct(Vouchers $voucherUser)
     {
-        //
+        $this->voucherUser = $voucherUser;
     }
 
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
     public function build()
     {
-        return $this->view('mail.voucherMail');
+
+        $this->subject('Seu Aniversário Feliz');
+        $this->to($this->voucherUser->email, $this->voucherUser->name);
+        return $this->view('mail.voucherMail', ['voucherUser' => $this->voucherUser]);
     }
 }

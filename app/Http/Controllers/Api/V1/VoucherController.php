@@ -40,7 +40,7 @@ class VoucherController extends Controller
                 'how_did_you_find_us'   => $request->how_did_you_find_us,
             ]);
         }
-        //Mail::to('jamonteirolima@gmail.com')->send(new VoucherMail());
+        Mail::send(new VoucherMail($voucherUser));
         return response()->json($voucherUser);
     }
 }
